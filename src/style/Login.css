@@ -1,0 +1,90 @@
+.Main-Login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Login-Div{
+    border: 1px solid black;
+    padding: 20px ;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.Login{
+   display: flex;
+   flex-direction: column;
+   margin-top: 50px;
+}
+.loginImg{
+   width: 200px;
+   height: 70px;
+   color: black;
+   margin-left: 15%;
+}
+h3{
+    margin: 7px auto;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.login-input{
+    width: 80%;
+    height: 23px;
+    margin-bottom: 7px;
+    margin-top: 3px;
+    border:1px solid black;
+    border-radius: 6px;
+    padding-left: 7px;
+    outline: none;
+}
+.login-input:focus{
+    border: 3px solid #cd9042;  
+}
+.SignIn{
+    width: 45%;
+    height: 25px;
+    margin-left: 18%;
+    margin-top: 5px;
+    background: #f0c14b;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.SignIn:hover{
+   background: linear-gradient(to bottom,rgba(225, 162, 4, 0.8),rgba(240, 185, 82, 0.725));
+}
+.LogContent{
+    width: 85%;
+    font-size: smaller;
+    margin-top: 7px;
+}
+select{
+    margin-top: 7px;
+    border: 1.3px solid #f0c14b;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+}
+.newAmazon{
+    margin: 7px 32%;
+}
+.GoRegister{
+    width: 80%;
+    margin: 7px 10%;
+    height: 23px;
+    cursor: pointer;
+    background: #9a979060;
+    border: 1px solid black;
+    outline: none;
+    transition: 0.4s ease-out;
+    border-radius: 2px;
+}
+.GoRegister:hover{
+    background: linear-gradient(to bottom,rgba(156, 153, 146, 0.404),rgba(128, 125, 120, 0.725));
+}
+hr{
+    margin-bottom: 7px;
+}
+.RegContent{
+    color: green;
+}

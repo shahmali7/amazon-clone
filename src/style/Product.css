@@ -1,0 +1,120 @@
+.productList{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.product{
+    width: 260px;
+    border: 1.5px solid #cd9042;
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+    animation: animate 250ms ease-in;
+}
+.product:hover{
+    
+    box-shadow: 5px 5px 10px 10px rgba(110, 106, 96, 0.612);
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.prod-rate{
+    display: flex;
+    color: gold;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+}
+.productImage{
+   height: 250px;
+   width: 90%;
+   object-fit: contain;
+   margin: 10px 7px;
+   cursor: pointer;
+   transition: transform 500ms;
+}
+.productImage:hover{
+    transform: scale(1.1);
+}
+.addBasket{
+    margin: 7px auto;
+    height: 35px;
+    width: 120px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    background: rgba(237, 186, 45, 0.932);
+    
+}
+.addBasket:hover{
+    background-color: black;
+    color: #cd9042;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.emptyCard{
+    background-color: rgba(144, 132, 132, 0.3);
+    height: 91vh;
+}
+.content-empty{
+    background-color: white;
+    padding: 10px 7px;
+    margin: 15px 7px;
+}
+.content-empty > p{
+    max-width: 80%;
+}
+.emptyImage{
+    width: 30%;
+    margin-left: 35%;
+}
+@media screen and (max-width:1200px) {
+    .productList{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+    }
+    .product{
+        width: 250px;
+        border: 1.5px solid #cd9042;
+        border-radius: 10px;
+        margin: 15px auto;
+        text-align: center;
+        animation: animate 250ms ease-in;
+    }
+}
+@media screen and (max-width:800px) {
+    .productList{
+        display: grid;
+        grid-template-columns: auto auto ;
+        width: 100%;
+    }
+    .product{
+        width: 240px;
+    }
+}
+@media screen and (max-width:498px) {
+    .productList{
+        display: grid;
+        grid-template-columns: auto ;
+        width: 100%;
+    }
+    .product{
+        width: 260px;
+    }
+}

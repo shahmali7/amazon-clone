@@ -1,0 +1,34 @@
+.footer{
+    width: 100%;
+    
+}
+.backtoTop{
+    width: 100%;
+    height: 27px;
+    cursor: pointer;
+    color: white;
+    background-color: #21334a;
+    border: none;
+}
+.footerAll{
+    background-color: #131921;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    color: white;
+}
+.footerAll p{
+    margin-top: 15px;
+}
+@media screen  and (max-width:550px){
+    .footerAll{
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+    }
+    .footerAll > div{
+        margin-top: 15px;
+    }
+}

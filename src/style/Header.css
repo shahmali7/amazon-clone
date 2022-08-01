@@ -1,0 +1,142 @@
+.Header{
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.amazon-logo{
+    width: 100px;
+    margin: 15px 20px 0;
+    object-fit: contain;
+}
+.search-div{
+    display: flex;
+    flex: 1;
+}
+.Icon-input{
+    background-color: #cd9042;
+    height: 25px !important;
+    width: 25px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+}
+.Header-input{
+    height: 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.Header-input:focus{
+    border: 2px solid #cd9042;
+}
+.language{
+    outline: none;
+    height: 18px;
+}
+.headerNav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.HeaderLink{
+    text-decoration: none;
+}
+.headerOption{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.FirstSpan{
+    font-size: 10px;
+}
+.SecondSpan{
+    font-size: 14px;
+    font-weight: 600;
+}
+.Basket{
+    display: flex;
+    align-items: center;
+}
+.basket-items{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.logout{
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.nav-btn {
+    cursor: pointer;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+@media screen and (max-width:768px){
+    .nav-btn{
+      visibility: visible;
+      opacity: 1;
+    }
+    .headerNav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 80px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgb(5, 2, 24);
+      transition: 0.4s;
+      transform: translateY(-100vh);
+    }
+    .responsive_navbar{
+      transform: none;
+    }
+}
+@media screen and (max-width:468px){
+    .headerNav > a {
+        color: white;
+        margin: 5px 3px;
+        text-transform: uppercase;
+    }
+    .headerNav{
+        height: 35%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        margin-top: 0;
+    }
+    .responsive_navbar{
+      transform: none;
+    }
+    .amazon-logo{
+        width: 100px;
+        margin: 15px 10px ;
+        object-fit: contain;
+    }
+    .headerOption{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+}
